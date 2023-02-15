@@ -5,6 +5,9 @@
     public static void Main(string[] args)
     {
         Console.WriteLine("Welcome to the Employee Wage computation problem");
+
+            CalculateTillCondition wage = new CalculateTillCondition();
+            wage.calculateWage();
     }
 }
 }
