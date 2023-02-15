@@ -5,6 +5,10 @@
     public static void Main(string[] args)
     {
         Console.WriteLine("Welcome to the Employee Wage computation problem");
+
+        CheckEmployee check = new CheckEmployee();
+
+        check.EmployeeCheck();
     }
 }
 }
