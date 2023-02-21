@@ -6,13 +6,11 @@
         {
             Console.WriteLine("Welcome to the Employee Wage computation problem");
 
-            EmpWageBuilder Samsung = new EmpWageBuilder("SAMSUNG", 20, 5, 25);
-            EmpWageBuilder Apple = new EmpWageBuilder("APPLE", 16, 6, 20);
+            EmpWageBuilder wageBuilder = new EmpWageBuilder();
 
-            Samsung.computeEmpWage();
-            Console.WriteLine(Samsung.toString());
-            Apple.computeEmpWage();
-            Console.WriteLine(Apple.toString());
+            wageBuilder.addCompanyEmpWage("MICROSOFT", 20, 5, 20);
+            wageBuilder.addCompanyEmpWage("GOOGLE", 18, 4, 23);
+            wageBuilder.computeEmpWage();
         }
     }
 }
